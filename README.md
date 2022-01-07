@@ -21,3 +21,5 @@ Criando listas ocultas
 [x]font-size
 [x]font-family
 [x]text-shadow
+
+- [x]Criação de tags com formato de box-shadow
