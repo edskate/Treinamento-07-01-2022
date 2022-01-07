@@ -1,54 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-              <meta charset="UTF-8">
-              <meta http-equiv="X-UA-Compatible" content="IE=edge">
-              <meta name="viewport" content="width=
-              , initial-scale=1.0">
-              <title>Document</title>
-              <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
 </head>
 <body>
-
-              <h1>5 (organização)(Para 2022)</h1>
-              <br>
-              <li>organização</li>
-              <li>planejamento</li>
-              <li>equilibrio</li>
-              <li>segurança</li>
-              <li>investment's</li>
-                  <br>
-                  <h1>Preparando Area de Trabalho</h1>  
-                  <ul>
-                  <ol>
-                  <li>curt</li>
-                  <li>Guest</li>
-                  <li>Ghost´s </li>
-                  <li>Wath</li>
-                  <li><details>Podemos criar links </details></li>
-                  <li><details>Criando um tod list</details></li>
-                  <li><details>joy, cast, my, hand</details></li>
-                  <li><details>Right, Thank you, Lord, </details></li>
-                  <li><details>Look </details></li>
-                  <li><del>olo</del></li><!---letra sifrada-->
-                  <h1>10 Exemplo(tag "del" ) </h1>
-                  <li><details>I like </details></li>
-                  <li><details>hi at home in said</details></li>
-                  <li><details>gate is that</details></li>
-                  <li><details>you can </details></li>
-                  <li><details>Short Program</details></li>
-                  </ol>
-                  </ul>
-
-              
-    <details>very Good</details><!--uma lista oculta-->      
-<br>
-        
-    <h2>Criando um To-do List</h2>
-    <br>
-    <div class="box1">
-    <details>Box-01</details>
-    <details>Criando uma box1 list</details>
-    </div>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Treinamento-07-01-2022","c":[{"t":"heading","d":2,"p":{"lines":[6,7]},"v":"com palavras ingles"}]})</script>
 </body>
 </html>
